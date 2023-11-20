@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Password generator app</title>
+</head>
+<body>
+  <div class="main-container">
+    <h3>PASSWORD GENERATOR</h3>
+    <div class="password-container">
+      <h3 id="Password">Password</h3>
+      <img src="./assets/images/icon-copy.svg" alt="" id="copy">
+    </div>
+    <div class="input-container">
+      <div class="length">
+        <h4>Character<br>Length</h4>
+        <h3>10</h3>
+      </div>
+      <input id="slider" type="range" min="1" max="20" value="10">
+      <div class="check-boxes">
+        <input type="checkbox" id="uppercase" name="Uppercase Letters">
+        <label for="Uppercase Letters"> Include Uppercase Letters </label><br>
+        <input type="checkbox" id="lowercase" name="Lowercase Letters">
+        <label for="Lowercase Letters"> Include Lowercase Letters </label><br>
+        <input type="checkbox" id="numbers" name="Include Numbers">
+        <label for="Include Numbers"> Include Numbers </label><br>
+        <input type="checkbox" id="symbols" name="Include Symbols">
+        <label for="Include Symbols"> Include Symbols</label>
+      </div>
+      <div class="strength-container">
+        <h4>STRENGTH</h4>
+        <div class="strength-display">
+          <h4 class="strength-text">WEAK</h4>
+          <div class="bars">
+            <span class="bar one"></span>
+            <span class="bar two"></span>
+            <span class="bar three"></span>
+            <span class="bar four"></span> 
+          </div>
+        </div>
+      </div>
+      <div class="generate-button">
+        <button id="generate">GENERATE<img src="./assets/images/icon-arrow-right.svg" alt=""></button> 
+      </div>
+    </div>
+  </div>
+
+<script src="index.js"></script>
+</body>
+</html>
